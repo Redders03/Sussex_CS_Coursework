@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=enrolled\ books
+comment0.target=College(int,\ int)
+comment0.text=\n\ College\ Class\ Constructor\n\ Initialize\ instance\ variables\ library\ and\ lists\n\ @param\ enrolled\ Value\ specifying\ the\ amount\ of\ students\ enrolled\n\ @param\ books\ Specifying\ the\ Methodamount\ of\ books\ in\ the\ library\n
+comment1.params=
+comment1.target=void\ describe()
+comment1.text=\n\ Method\ Prints\ to\ terminal\ the\ number\ of\ students\ in\ the\ list\ with\ appropriate\ text.\n
+comment2.params=
+comment2.target=void\ nextStep()
+comment3.params=nSteps
+comment3.target=void\ runCollege(int)
+comment3.text=\n\ Method\ used\ to\ run\ simulation\ of\ college\ running.\n\ @param\ nSteps\ value\ set\ for\ limit\ on\ For\ Loop\n
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+comment4.text=\n\ Main\ Method\ used\ to\ start\ program\ outside\ of\ blueJ\ enviroment.\n\ @param\ args\ Arguements\ that\ are\ stored\ in\ a\ String\ array\ \n
+numComments=5

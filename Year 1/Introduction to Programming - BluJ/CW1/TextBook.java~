@@ -1,0 +1,92 @@
+
+/**
+ * Class Containing all fields and methods relating to a Textbook.
+ * Alex Reddington
+ * V1 October 2015
+ */
+public class TextBook
+{
+    // instance variables 
+    private String Title;
+    private int chapterTotal, chapterCount, chapterLeft;
+    /**
+     * Constructor for objects of class Textbook
+     * Purpose is to initalize an object with the use of setting Title, ChapterTotal to 
+     * appropriate values entered by user and reset ChapterCount to 0.
+     */
+    public TextBook(int chapterTInput, int chapterCInput, String titleInput){
+        // initialise instance variables
+        chapterTotal = chapterTInput;
+        chapterCount = chapterCInput;
+        Title = titleInput;
+        chapterCount = 0;
+    }
+
+    /**
+     * getTitle Method
+     * Use is to return set string located in Title via method return value.
+     * @return     stringTitle
+     */
+    public String getTitle(){
+       return Title;
+    }
+    
+    /**
+     * readNextChapter Method
+     * Purpose is to identify whether user has chapters left to read in the book. 
+     * If this is the case it increases the ChapterCount Counter by 1. 
+     * Else it returns an error message stating that end of book has been reached.
+     */
+    public void readNextChapter(){
+            if(chapterTotal > chapterCount){
+                chapterCount ++;
+            }
+            else{
+                System.out.println( "You have reached the final chapter of this book");
+            }
+    }
+    /**
+     * Finished Method
+     * Purpose is to return a Boolean value (True/False) depending if end of book has been reached.
+     * Result is True if Total number of chapters in book equal the chapter count.
+     * The latter applies for the other eventuality.
+     */
+    
+    public boolean Finished(){
+        if(chapterCount == chapterTotal){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    
+    /**
+     * closeBook Method
+     * Purpose is to return Chapter Count value back to 0 when a user is no longer reading this book.
+     */
+    public void closeBook(){
+        chapterCount = 0;
+    }
+    
+    /**
+     * describe Method
+     * Purpose is to return information relating to a book onto the console/terminal of a computer.
+     * Information returned is Title of book and amount of chapters left calculated by populating chapterLeft
+     * via chapterTotal - chapterCount. 
+     * An if statement is present to add redundency such that a value specifying a minus value of chapters 
+     * left does not occure if the value for chapterCount = chapterTotal leading to 0 - 1 = -1.
+     */
+    public void describe(){
+        chapterLeft = 0;
+        if(chapterLeft < chapterTotal){
+            chapterLeft = chapterTotal - chapterCount;
+        }
+        else{
+            chapterLeft = 0;
+        }
+        System.out.println(Title +" " +"With" +" " + chapterLeft +" " +"chapters left to read"); 
+    }
+}
+    
+    

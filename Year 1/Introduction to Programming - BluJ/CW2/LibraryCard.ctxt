@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=idNum\ maxNum
+comment0.target=LibraryCard(int,\ int)
+comment1.params=
+comment1.target=void\ swipe()
+comment2.params=
+comment2.target=boolean\ expired()
+comment3.params=
+comment3.target=java.lang.String\ getCardRef()
+comment4.params=
+comment4.target=void\ describe()
+numComments=5

@@ -1,0 +1,58 @@
+
+/**
+ * Write a description of class LibraryCard here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class LibraryCard
+{
+    // instance variables - replace the example below with your own
+    private int userLimit, numBorrowed, numLeft;
+    private String Reference;
+    /**
+     * Constructor for objects of class LibraryCard
+     */
+    public LibraryCard(int userLtInput, String ReferenceInput){
+        // initialise instance variables
+        userLimit = userLtInput;
+        Reference = ReferenceInput;
+        numBorrowed = 0;
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    public void swipe(){
+        // put your code here
+        numBorrowed++;
+    }
+    
+    public boolean expired(){
+        if(numBorrowed == userLimit){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    
+    public String getCardRef(){
+        return Reference;
+    }
+    
+    public void describe(){
+       if(numBorrowed < userLimit){
+           numLeft = userLimit - numBorrowed;
+        }
+       else{
+           numLeft = 0;
+        }
+       System.out.println("Library Card Reference :" +" " +Reference +" " +"has the ability to lend" +" " +numLeft +" " +"more book");
+    }
+}
+       
+        

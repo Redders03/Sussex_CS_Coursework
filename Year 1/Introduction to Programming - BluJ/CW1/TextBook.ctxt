@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=titleInput\ chapterTotalInput
+comment0.target=TextBook(java.lang.String,\ int)
+comment1.params=
+comment1.target=java.lang.String\ getTitle()
+comment2.params=
+comment2.target=void\ readNextChapter()
+comment3.params=
+comment3.target=boolean\ finished()
+comment4.params=
+comment4.target=void\ closeBook()
+comment5.params=
+comment5.target=void\ describe()
+numComments=6

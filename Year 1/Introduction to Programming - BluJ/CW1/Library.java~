@@ -1,0 +1,35 @@
+import java.util.Arrays;
+public class Library
+{
+    // instance variables
+    private TextBook[] bookShelf;
+    private int userTotal, bookShelfLimit, counter;
+    public Library(int bookSLInput){
+        // initialise instance variables
+        bookShelfLimit = bookSLInput;
+        bookShelf = new TextBook[bookShelfLimit];
+        TextBook book;
+        userTotal = 0;
+        for(int i = 0; i <= bookShelfLimit;i++){
+             book = new TextBook("Textbook " + i, 5,,); 
+             TextBook[i] = book;
+        }
+    }
+    public LibraryCard issueCard(){
+        return new LibraryCard(5,userTotal++);
+    }
+    public TextBook borrowBook(int cardEntry,slotMarker){
+        if(cardEntry > userTotal){
+            System.out.println("The ID Card number that you have entered is invalid");  
+        }
+        else{
+        if(slotMarker > bookShelfLimit){
+            System.out.println("The Book ID does not exist")
+            
+            TextBook borrowedBook = TextBook[slotMarker];
+        TextBook[slotMarker] = null;
+    }
+    public void returnBook(TextBook book){
+        TextBook[slotMarker] = TextBook borrowedBook;
+    }
+}
